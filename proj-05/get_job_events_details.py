@@ -17,7 +17,6 @@ tower_password = os.environ.get('tower_password')
 def get_job_events(tower_job_id='1'):
 
     job_data = {}
-    # job_data['summary_fields'] = []
     job_data['event_data'] = []
 
     url = tower_base_url + '/api/v2/jobs/'
@@ -30,7 +29,6 @@ def get_job_events(tower_job_id='1'):
     for result in response.json()['results']:
 
         if result['summary_fields'] != "":
-            # job_data['summary_fields'].append(result['summary_fields'])
             if result['event_data']:
                 if 'res' in result['event_data']:
                     if 'msg' in result['event_data']['res']:

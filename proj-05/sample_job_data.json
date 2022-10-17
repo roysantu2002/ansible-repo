@@ -82,5 +82,87 @@
                 "Destination /home/pi/test not writable"
             ]
         }
+    },
+    {
+        "id": 36,
+        "name": "test-two",
+        "url": "/api/v2/jobs/36/",
+        "status": "failed",
+        "job_template": 10,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
+        },
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
+            "event_data": [
+                "Failed to connect to the host via ssh: ssh: connect to host 192.168.1.101 port 22: Connection timed out"
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "test-two",
+        "url": "/api/v2/jobs/38/",
+        "status": "failed",
+        "job_template": 10,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
+        },
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
+            "event_data": [
+                "Failed to connect to the host via ssh: ssh: connect to host 192.168.1.101 port 22: Connection timed out"
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "test-three",
+        "url": "/api/v2/jobs/40/",
+        "status": "failed",
+        "job_template": 11,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
+        },
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
+            "event_data": []
+        }
     }
 ]
