@@ -1,1 +1,1 @@
-web_server_ubuntu_1 ansible_host=192.168.1.100 ansible_ssh_user=ansible ansible_ssh_pass=ansible1234
+localServers ansible_host=192.168.1.100 ansible_ssh_user=ansible ansible_ssh_pass=ansible1234
