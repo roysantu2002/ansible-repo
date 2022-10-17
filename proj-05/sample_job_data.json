@@ -1,0 +1,45 @@
+{
+    "id": [
+        24,
+        26,
+        28
+    ],
+    "url": [
+        "/api/v2/jobs/24/",
+        "/api/v2/jobs/26/",
+        "/api/v2/jobs/28/"
+    ],
+    "status": [
+        "failed",
+        "failed",
+        "failed"
+    ],
+    "job_template": [
+        9,
+        9,
+        9
+    ],
+    "inventory": [],
+    "project": [
+        8,
+        8,
+        8
+    ],
+    "events": [
+        {
+            "event_data": [
+                "Destination /home/pi not writable"
+            ]
+        },
+        {
+            "event_data": [
+                "Destination /home/pi/test not writable"
+            ]
+        },
+        {
+            "event_data": [
+                "Destination /home/pi/test not writable"
+            ]
+        }
+    ]
+}

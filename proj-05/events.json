@@ -1,0 +1,2199 @@
+"results": [
+        {
+            "id": 85,
+            "type": "job_event",
+            "url": "/api/v2/job_events/85/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/85/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:40.829120Z",
+            "modified": "2022-10-17T05:18:40.829120Z",
+            "job": 28,
+            "event": "verbose",
+            "counter": 1,
+            "event_display": "Verbose",
+            "event_data": {},
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "2309addc-dd2f-449d-991c-d96c1272ff6e",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "SSH password: ",
+            "start_line": 0,
+            "end_line": 1,
+            "verbosity": 0
+        },
+        {
+            "id": 86,
+            "type": "job_event",
+            "url": "/api/v2/job_events/86/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/86/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:41.523456Z",
+            "modified": "2022-10-17T05:18:41.532643Z",
+            "job": 28,
+            "event": "playbook_on_play_start",
+            "counter": 3,
+            "event_display": "Play Started (localServers)",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "name": "localServers",
+                "pattern": "localServers",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "uuid": "31c08fb7-569c-9bdc-3278-000000000006"
+            },
+            "event_level": 1,
+            "failed": false,
+            "changed": false,
+            "uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+            "parent_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "",
+            "role": "",
+            "stdout": "\r\nPLAY [localServers] ************************************************************",
+            "start_line": 1,
+            "end_line": 3,
+            "verbosity": 0
+        },
+        {
+            "id": 87,
+            "type": "job_event",
+            "url": "/api/v2/job_events/87/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/87/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:41.516564Z",
+            "modified": "2022-10-17T05:18:41.531136Z",
+            "job": 28,
+            "event": "playbook_on_start",
+            "counter": 2,
+            "event_display": "Playbook Started",
+            "event_data": {
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "uuid": "d22650b1-6678-469e-b5e4-91aed726dd08"
+            },
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "",
+            "start_line": 1,
+            "end_line": 1,
+            "verbosity": 0
+        },
+        {
+            "id": 88,
+            "type": "job_event",
+            "url": "/api/v2/job_events/88/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/88/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:41.540595Z",
+            "modified": "2022-10-17T05:18:41.551018Z",
+            "job": 28,
+            "event": "playbook_on_task_start",
+            "counter": 4,
+            "event_display": "Task Started (Gathering Facts)",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "Gathering Facts",
+                "task_args": "",
+                "uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "is_conditional": false,
+                "task_uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "gather_facts",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:2",
+                "name": "Gathering Facts"
+            },
+            "event_level": 2,
+            "failed": false,
+            "changed": false,
+            "uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Gathering Facts",
+            "role": "",
+            "stdout": "\r\nTASK [Gathering Facts] *********************************************************",
+            "start_line": 3,
+            "end_line": 5,
+            "verbosity": 0
+        },
+        {
+            "id": 89,
+            "type": "job_event",
+            "url": "/api/v2/job_events/89/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/89/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:41.541621Z",
+            "modified": "2022-10-17T05:18:41.553900Z",
+            "job": 28,
+            "event": "runner_on_start",
+            "counter": 5,
+            "event_display": "Host Started",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "Gathering Facts",
+                "task_args": "",
+                "uuid": "39161d8e-36cb-4c76-b83d-68119527df08",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "gather_facts",
+                "host": "192.168.1.100",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:2"
+            },
+            "event_level": 3,
+            "failed": false,
+            "changed": false,
+            "uuid": "39161d8e-36cb-4c76-b83d-68119527df08",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Gathering Facts",
+            "role": "",
+            "stdout": "",
+            "start_line": 5,
+            "end_line": 5,
+            "verbosity": 0
+        },
+        {
+            "id": 90,
+            "type": "job_event",
+            "url": "/api/v2/job_events/90/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/90/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.174791Z",
+            "modified": "2022-10-17T05:18:49.174791Z",
+            "job": 28,
+            "event": "verbose",
+            "counter": 6,
+            "event_display": "Verbose",
+            "event_data": {},
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "8880857a-f39e-464f-ab18-6463b4049df9",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "\u001b[1;35m[WARNING]: Platform linux on host 192.168.1.100 is using the discovered Python\u001b[0m",
+            "start_line": 5,
+            "end_line": 6,
+            "verbosity": 0
+        },
+        {
+            "id": 92,
+            "type": "job_event",
+            "url": "/api/v2/job_events/92/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/92/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.174153Z",
+            "modified": "2022-10-17T05:18:49.174153Z",
+            "job": 28,
+            "event": "verbose",
+            "counter": 7,
+            "event_display": "Verbose",
+            "event_data": {},
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "3a7bddbb-af8c-49f7-b62e-de59df5e8f66",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "\u001b[1;35minterpreter at /usr/bin/python, but future installation of another Python\u001b[0m",
+            "start_line": 6,
+            "end_line": 7,
+            "verbosity": 0
+        },
+        {
+            "id": 91,
+            "type": "job_event",
+            "url": "/api/v2/job_events/91/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/91/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.175676Z",
+            "modified": "2022-10-17T05:18:49.175676Z",
+            "job": 28,
+            "event": "verbose",
+            "counter": 8,
+            "event_display": "Verbose",
+            "event_data": {},
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "98f4cd3d-92e0-4cf7-99e7-c7e8203b2730",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "\u001b[1;35minterpreter could change this. See https://docs.ansible.com/ansible/2.9/referen\u001b[0m",
+            "start_line": 7,
+            "end_line": 8,
+            "verbosity": 0
+        },
+        {
+            "id": 93,
+            "type": "job_event",
+            "url": "/api/v2/job_events/93/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/93/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:50.389651Z",
+            "modified": "2022-10-17T05:18:50.389651Z",
+            "job": 28,
+            "event": "verbose",
+            "counter": 9,
+            "event_display": "Verbose",
+            "event_data": {},
+            "event_level": 0,
+            "failed": false,
+            "changed": false,
+            "uuid": "b5130cd3-09dd-4aab-85e3-0483db4243f9",
+            "parent_uuid": "",
+            "host": null,
+            "host_name": "",
+            "playbook": "",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "\u001b[1;35mce_appendices/interpreter_discovery.html for more information.\u001b[0m",
+            "start_line": 8,
+            "end_line": 9,
+            "verbosity": 0
+        },
+        {
+            "id": 94,
+            "type": "job_event",
+            "url": "/api/v2/job_events/94/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/94/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.161345Z",
+            "modified": "2022-10-17T05:18:50.389651Z",
+            "job": 28,
+            "event": "runner_on_ok",
+            "counter": 10,
+            "event_display": "Host OK",
+            "event_data": {
+                "play": "localServers",
+                "event_loop": null,
+                "task_args": "",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "gather_facts",
+                "duration": 7.61957,
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:2",
+                "play_pattern": "localServers",
+                "task": "Gathering Facts",
+                "end": "2022-10-17T05:18:49.161039",
+                "uuid": "d079d062-cfb2-47c0-ba9f-ed0ef7594902",
+                "remote_addr": "192.168.1.100",
+                "res": {
+                    "deprecations": [],
+                    "_ansible_no_log": false,
+                    "warnings": [
+                        "Platform linux on host 192.168.1.100 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information."
+                    ],
+                    "changed": false,
+                    "_ansible_verbose_override": true,
+                    "ansible_facts": {
+                        "ansible_processor_count": 4,
+                        "gather_subset": [
+                            "all"
+                        ],
+                        "ansible_product_version": "NA",
+                        "ansible_service_mgr": "systemd",
+                        "ansible_fibre_channel_wwn": [],
+                        "module_setup": true,
+                        "ansible_memtotal_mb": 923,
+                        "ansible_hostnqn": "",
+                        "ansible_distribution_version": "10",
+                        "ansible_real_user_id": 1001,
+                        "ansible_virtualization_role": "NA",
+                        "ansible_distribution_file_variety": "Debian",
+                        "ansible_effective_group_id": 1001,
+                        "ansible_lo": {
+                            "features": {
+                                "tx_checksum_ipv4": "off [fixed]",
+                                "generic_receive_offload": "on",
+                                "tx_checksum_ipv6": "off [fixed]",
+                                "netns_local": "on [fixed]",
+                                "tx_scatter_gather_fraglist": "on [fixed]",
+                                "rx_all": "off [fixed]",
+                                "highdma": "on [fixed]",
+                                "rx_fcs": "off [fixed]",
+                                "tx_lockless": "on [fixed]",
+                                "tx_tcp_ecn_segmentation": "on",
+                                "rx_udp_tunnel_port_offload": "off [fixed]",
+                                "esp_hw_offload": "off [fixed]",
+                                "tx_gso_robust": "off [fixed]",
+                                "tx_udp_segmentation": "off [fixed]",
+                                "tx_tcp_mangleid_segmentation": "on",
+                                "tx_ipxip4_segmentation": "off [fixed]",
+                                "tx_checksumming": "on",
+                                "macsec_hw_offload": "off [fixed]",
+                                "vlan_challenged": "on [fixed]",
+                                "loopback": "on [fixed]",
+                                "tx_ipxip6_segmentation": "off [fixed]",
+                                "rx_gro_list": "off",
+                                "fcoe_mtu": "off [fixed]",
+                                "scatter_gather": "on",
+                                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                "tx_vlan_stag_hw_insert": "off [fixed]",
+                                "rx_vlan_stag_hw_parse": "off [fixed]",
+                                "tx_gso_partial": "off [fixed]",
+                                "tx_tcp_segmentation": "on",
+                                "rx_vlan_stag_filter": "off [fixed]",
+                                "large_receive_offload": "off [fixed]",
+                                "tx_scatter_gather": "on [fixed]",
+                                "tx_tcp6_segmentation": "on",
+                                "rx_checksumming": "on [fixed]",
+                                "rx_gro_hw": "off [fixed]",
+                                "tx_checksum_sctp": "on [fixed]",
+                                "tx_esp_segmentation": "off [fixed]",
+                                "generic_segmentation_offload": "on",
+                                "tls_hw_rx_offload": "off [fixed]",
+                                "tcp_segmentation_offload": "on",
+                                "l2_fwd_offload": "off [fixed]",
+                                "rx_vlan_offload": "off [fixed]",
+                                "ntuple_filters": "off [fixed]",
+                                "tx_gre_csum_segmentation": "off [fixed]",
+                                "esp_tx_csum_hw_offload": "off [fixed]",
+                                "tx_udp_tnl_segmentation": "off [fixed]",
+                                "tx_gso_list": "off [fixed]",
+                                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                "tx_sctp_segmentation": "on",
+                                "udp_fragmentation_offload": "off",
+                                "tls_hw_record": "off [fixed]",
+                                "tls_hw_tx_offload": "off [fixed]",
+                                "tx_checksum_fcoe_crc": "off [fixed]",
+                                "hw_tc_offload": "off [fixed]",
+                                "tx_checksum_ip_generic": "on [fixed]",
+                                "tx_fcoe_segmentation": "off [fixed]",
+                                "tx_nocache_copy": "off [fixed]",
+                                "rx_vlan_filter": "off [fixed]",
+                                "tx_vlan_offload": "off [fixed]",
+                                "receive_hashing": "off [fixed]",
+                                "tx_gre_segmentation": "off [fixed]"
+                            },
+                            "hw_timestamp_filters": [],
+                            "mtu": 65536,
+                            "device": "lo",
+                            "promisc": false,
+                            "timestamping": [
+                                "tx_software",
+                                "rx_software",
+                                "software"
+                            ],
+                            "ipv4": {
+                                "broadcast": "",
+                                "netmask": "255.0.0.0",
+                                "network": "127.0.0.0",
+                                "address": "127.0.0.1"
+                            },
+                            "ipv6": [
+                                {
+                                    "scope": "host",
+                                    "prefix": "128",
+                                    "address": "::1"
+                                }
+                            ],
+                            "active": true,
+                            "type": "loopback"
+                        },
+                        "ansible_userspace_bits": "32",
+                        "ansible_architecture": "armv7l",
+                        "ansible_device_links": {
+                            "masters": {},
+                            "labels": {
+                                "mmcblk0p7": [
+                                    "root"
+                                ],
+                                "mmcblk0p6": [
+                                    "boot"
+                                ],
+                                "mmcblk0p5": [
+                                    "SETTINGS"
+                                ],
+                                "mmcblk0p1": [
+                                    "RECOVERY"
+                                ]
+                            },
+                            "ids": {
+                                "mmcblk0": [
+                                    "mmc-SL16G_0x6dc92afa"
+                                ],
+                                "mmcblk0p7": [
+                                    "mmc-SL16G_0x6dc92afa-part7"
+                                ],
+                                "mmcblk0p6": [
+                                    "mmc-SL16G_0x6dc92afa-part6"
+                                ],
+                                "mmcblk0p5": [
+                                    "mmc-SL16G_0x6dc92afa-part5"
+                                ],
+                                "mmcblk0p2": [
+                                    "mmc-SL16G_0x6dc92afa-part2"
+                                ],
+                                "mmcblk0p1": [
+                                    "mmc-SL16G_0x6dc92afa-part1"
+                                ]
+                            },
+                            "uuids": {
+                                "mmcblk0p7": [
+                                    "6b0426ca-4c80-439a-9e23-0af6fbb01222"
+                                ],
+                                "mmcblk0p6": [
+                                    "0407-9499"
+                                ],
+                                "mmcblk0p5": [
+                                    "6b5fafc5-9e8e-4a14-a5fe-bdb7d984ac01"
+                                ],
+                                "mmcblk0p1": [
+                                    "0F3D-A11B"
+                                ]
+                            }
+                        },
+                        "ansible_default_ipv4": {
+                            "macaddress": "b8:27:eb:14:04:90",
+                            "network": "192.168.1.0",
+                            "mtu": 1500,
+                            "broadcast": "192.168.1.255",
+                            "alias": "eth0",
+                            "netmask": "255.255.255.0",
+                            "address": "192.168.1.100",
+                            "interface": "eth0",
+                            "type": "ether",
+                            "gateway": "192.168.1.1"
+                        },
+                        "ansible_swapfree_mb": 98,
+                        "ansible_default_ipv6": {
+                            "macaddress": "b8:27:eb:14:04:90",
+                            "mtu": 1500,
+                            "prefix": "64",
+                            "address": "fe80::ba27:ebff:fe14:490",
+                            "interface": "eth0",
+                            "scope": "link",
+                            "type": "ether",
+                            "gateway": "fe80::1"
+                        },
+                        "ansible_distribution_release": "buster",
+                        "ansible_apparmor": {
+                            "status": "disabled"
+                        },
+                        "ansible_cmdline": {
+                            "snd_bcm2835.enable_hdmi": "1",
+                            "bcm2708_fb.fbheight": "480",
+                            "vc_mem.mem_base": "0x3ec00000",
+                            "bcm2708_fb.fbwidth": "720",
+                            "vc_mem.mem_size": "0x40000000",
+                            "fsck.repair": "yes",
+                            "rootfstype": "ext4",
+                            "plymouth.ignore-serial-consoles": true,
+                            "console": "tty1",
+                            "snd_bcm2835.enable_compat_alsa": "0",
+                            "bcm2708_fb.fbswap": "1",
+                            "rootwait": true,
+                            "quiet": true,
+                            "elevator": "deadline",
+                            "splash": true,
+                            "coherent_pool": "1M",
+                            "root": "/dev/mmcblk0p7"
+                        },
+                        "ansible_selinux": {
+                            "status": "Missing selinux Python library"
+                        },
+                        "ansible_bios_date": "NA",
+                        "ansible_product_uuid": "NA",
+                        "ansible_pkg_mgr": "apt",
+                        "ansible_memfree_mb": 139,
+                        "ansible_memory_mb": {
+                            "real": {
+                                "total": 923,
+                                "used": 784,
+                                "free": 139
+                            },
+                            "swap": {
+                                "cached": 0,
+                                "total": 99,
+                                "free": 98,
+                                "used": 1
+                            },
+                            "nocache": {
+                                "used": 204,
+                                "free": 719
+                            }
+                        },
+                        "ansible_distribution": "Debian",
+                        "ansible_user_dir": "/home/ansible",
+                        "ansible_iscsi_iqn": "",
+                        "ansible_hostname": "raspberrypi",
+                        "ansible_all_ipv6_addresses": [
+                            "fe80::ba27:ebff:fe14:490"
+                        ],
+                        "ansible_interfaces": [
+                            "lo",
+                            "eth0"
+                        ],
+                        "ansible_uptime_seconds": 1538041,
+                        "ansible_machine_id": "b8cd4b5249fc48e1b8701d28de8c580f",
+                        "ansible_kernel": "5.10.103-v7+",
+                        "ansible_system_capabilities_enforced": "True",
+                        "ansible_python": {
+                            "executable": "/usr/bin/python",
+                            "version": {
+                                "micro": 16,
+                                "major": 2,
+                                "releaselevel": "final",
+                                "serial": 0,
+                                "minor": 7
+                            },
+                            "type": "CPython",
+                            "has_sslcontext": true,
+                            "version_info": [
+                                2,
+                                7,
+                                16,
+                                "final",
+                                0
+                            ]
+                        },
+                        "ansible_domain": "",
+                        "ansible_is_chroot": false,
+                        "ansible_user_gid": 1001,
+                        "ansible_user_shell": "/bin/bash",
+                        "ansible_nodename": "raspberrypi",
+                        "ansible_product_serial": "NA",
+                        "ansible_form_factor": "NA",
+                        "ansible_distribution_file_parsed": true,
+                        "ansible_fips": false,
+                        "ansible_user_id": "ansible",
+                        "ansible_selinux_python_present": false,
+                        "ansible_kernel_version": "#1529 SMP Tue Mar 8 12:21:37 GMT 2022",
+                        "ansible_local": {},
+                        "ansible_distribution_file_path": "/etc/os-release",
+                        "discovered_interpreter_python": "/usr/bin/python",
+                        "ansible_virtualization_type": "NA",
+                        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIKuLDJw/wBrWzjLtW9k7l9vo3cy78naS3jWiCAm38EnZ",
+                        "ansible_processor_cores": 1,
+                        "ansible_processor_vcpus": 4,
+                        "ansible_bios_version": "NA",
+                        "ansible_processor": [
+                            "0",
+                            "ARMv7 Processor rev 5 (v7l)",
+                            "1",
+                            "ARMv7 Processor rev 5 (v7l)",
+                            "2",
+                            "ARMv7 Processor rev 5 (v7l)",
+                            "3",
+                            "ARMv7 Processor rev 5 (v7l)"
+                        ],
+                        "ansible_fqdn": "raspberrypi",
+                        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBM2qsdM+8AtkoQDU0ZoHi3Zu3Sv/f8HsXoOllQP/FYZ3dEgpDk3b/wIr/U9r/gnF2GjhkqLfSesoUCjW9se1yuo=",
+                        "ansible_mounts": [
+                            {
+                                "block_used": 98645,
+                                "uuid": "0407-9499",
+                                "size_total": 264288256,
+                                "block_total": 516188,
+                                "mount": "/boot",
+                                "block_available": 417543,
+                                "size_available": 213782016,
+                                "fstype": "vfat",
+                                "inode_total": 0,
+                                "options": "rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,errors=remount-ro",
+                                "device": "/dev/mmcblk0p6",
+                                "inode_used": 0,
+                                "block_size": 512,
+                                "inode_available": 0
+                            },
+                            {
+                                "block_used": 2114896,
+                                "uuid": "N/A",
+                                "size_total": 12731604992,
+                                "block_total": 3108302,
+                                "mount": "/",
+                                "block_available": 993406,
+                                "size_available": 4068990976,
+                                "fstype": "ext4",
+                                "inode_total": 798112,
+                                "options": "rw,noatime",
+                                "device": "/dev/root",
+                                "inode_used": 193388,
+                                "block_size": 4096,
+                                "inode_available": 604724
+                            }
+                        ],
+                        "ansible_system_vendor": "NA",
+                        "ansible_os_family": "Debian",
+                        "ansible_effective_user_id": 1001,
+                        "ansible_swaptotal_mb": 99,
+                        "ansible_product_name": "NA",
+                        "ansible_date_time": {
+                            "weeknumber": "42",
+                            "month": "10",
+                            "iso8601_basic": "20221017T104848863222",
+                            "iso8601_micro": "2022-10-17T05:18:48.863222Z",
+                            "year": "2022",
+                            "date": "2022-10-17",
+                            "iso8601": "2022-10-17T05:18:48Z",
+                            "day": "17",
+                            "minute": "48",
+                            "second": "48",
+                            "weekday_number": "1",
+                            "iso8601_basic_short": "20221017T104848",
+                            "tz": "IST",
+                            "hour": "10",
+                            "tz_offset": "+0530",
+                            "epoch": "1665983928",
+                            "weekday": "Monday",
+                            "time": "10:48:48"
+                        },
+                        "ansible_devices": {
+                            "ram14": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram15": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram12": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram13": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram10": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram11": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop3": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop2": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop1": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop0": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop7": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop6": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop5": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "loop4": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "0.00 Bytes",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "1",
+                                "sectors": "0",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "mmcblk0": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [
+                                        "mmc-SL16G_0x6dc92afa"
+                                    ],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "4194304",
+                                "holders": [],
+                                "size": "14.84 GB",
+                                "scheduler_mode": "mq-deadline",
+                                "rotational": "0",
+                                "sectors": "31116288",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {
+                                    "mmcblk0p7": {
+                                        "start": "5586944",
+                                        "sectorsize": 512,
+                                        "uuid": "6b0426ca-4c80-439a-9e23-0af6fbb01222",
+                                        "sectors": "25529344",
+                                        "holders": [],
+                                        "links": {
+                                            "masters": [],
+                                            "labels": [
+                                                "root"
+                                            ],
+                                            "ids": [
+                                                "mmc-SL16G_0x6dc92afa-part7"
+                                            ],
+                                            "uuids": [
+                                                "6b0426ca-4c80-439a-9e23-0af6fbb01222"
+                                            ]
+                                        },
+                                        "size": "12.17 GB"
+                                    },
+                                    "mmcblk0p6": {
+                                        "start": "5062656",
+                                        "sectorsize": 512,
+                                        "uuid": "0407-9499",
+                                        "sectors": "524286",
+                                        "holders": [],
+                                        "links": {
+                                            "masters": [],
+                                            "labels": [
+                                                "boot"
+                                            ],
+                                            "ids": [
+                                                "mmc-SL16G_0x6dc92afa-part6"
+                                            ],
+                                            "uuids": [
+                                                "0407-9499"
+                                            ]
+                                        },
+                                        "size": "256.00 MB"
+                                    },
+                                    "mmcblk0p5": {
+                                        "start": "4997120",
+                                        "sectorsize": 512,
+                                        "uuid": "6b5fafc5-9e8e-4a14-a5fe-bdb7d984ac01",
+                                        "sectors": "65534",
+                                        "holders": [],
+                                        "links": {
+                                            "masters": [],
+                                            "labels": [
+                                                "SETTINGS"
+                                            ],
+                                            "ids": [
+                                                "mmc-SL16G_0x6dc92afa-part5"
+                                            ],
+                                            "uuids": [
+                                                "6b5fafc5-9e8e-4a14-a5fe-bdb7d984ac01"
+                                            ]
+                                        },
+                                        "size": "32.00 MB"
+                                    },
+                                    "mmcblk0p2": {
+                                        "start": "4990235",
+                                        "sectorsize": 512,
+                                        "uuid": null,
+                                        "sectors": "2",
+                                        "holders": [],
+                                        "links": {
+                                            "masters": [],
+                                            "labels": [],
+                                            "ids": [
+                                                "mmc-SL16G_0x6dc92afa-part2"
+                                            ],
+                                            "uuids": []
+                                        },
+                                        "size": "1.00 KB"
+                                    },
+                                    "mmcblk0p1": {
+                                        "start": "8192",
+                                        "sectorsize": 512,
+                                        "uuid": "0F3D-A11B",
+                                        "sectors": "4982043",
+                                        "holders": [],
+                                        "links": {
+                                            "masters": [],
+                                            "labels": [
+                                                "RECOVERY"
+                                            ],
+                                            "ids": [
+                                                "mmc-SL16G_0x6dc92afa-part1"
+                                            ],
+                                            "uuids": [
+                                                "0F3D-A11B"
+                                            ]
+                                        },
+                                        "size": "2.38 GB"
+                                    }
+                                }
+                            },
+                            "ram8": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram9": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram4": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram5": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram6": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram7": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram0": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram1": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram2": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            },
+                            "ram3": {
+                                "sectorsize": "512",
+                                "vendor": null,
+                                "links": {
+                                    "masters": [],
+                                    "labels": [],
+                                    "ids": [],
+                                    "uuids": []
+                                },
+                                "sas_device_handle": null,
+                                "host": "",
+                                "support_discard": "0",
+                                "holders": [],
+                                "size": "4.00 MB",
+                                "scheduler_mode": "",
+                                "rotational": "0",
+                                "sectors": "8192",
+                                "sas_address": null,
+                                "virtual": 1,
+                                "removable": "0",
+                                "model": null,
+                                "partitions": {}
+                            }
+                        },
+                        "ansible_user_uid": 1001,
+                        "ansible_dns": {
+                            "nameservers": [
+                                "192.168.1.100",
+                                "8.8.8.8",
+                                "fd51:42f8:caae:d92e::1"
+                            ]
+                        },
+                        "ansible_distribution_major_version": "10",
+                        "ansible_real_group_id": 1001,
+                        "ansible_lsb": {
+                            "release": "10",
+                            "major_release": "10",
+                            "codename": "buster",
+                            "id": "Raspbian",
+                            "description": "Raspbian GNU/Linux 10 (buster)"
+                        },
+                        "ansible_proc_cmdline": {
+                            "snd_bcm2835.enable_hdmi": "1",
+                            "bcm2708_fb.fbheight": "480",
+                            "vc_mem.mem_base": "0x3ec00000",
+                            "bcm2708_fb.fbwidth": "720",
+                            "vc_mem.mem_size": "0x40000000",
+                            "fsck.repair": "yes",
+                            "rootfstype": "ext4",
+                            "plymouth.ignore-serial-consoles": true,
+                            "console": [
+                                "ttyAMA0,115200",
+                                "tty1"
+                            ],
+                            "snd_bcm2835.enable_compat_alsa": "0",
+                            "bcm2708_fb.fbswap": "1",
+                            "rootwait": true,
+                            "quiet": true,
+                            "elevator": "deadline",
+                            "splash": true,
+                            "coherent_pool": "1M",
+                            "root": "/dev/mmcblk0p7"
+                        },
+                        "ansible_machine": "armv7l",
+                        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDTcFFqQoxVaKJqDf7w4ywjfZFe23q70XOvkiYXDT3BjAs7W/IyRRnalx8Rr/rWXbzcAUsPPip9PhAXFBtQP2kRJoe1MMOp2EK8o8wYxOn9HaXGBTqiTtiMpSkOcw4Ux7qCGa6tJMUaYMqPbngSASvV+vWZ2/5rva7O+Ojm7WKeOtXnsW8aZZw8jaN9qXDdmxNnqGJdcfuddhNEC9DoKEUyOQz/e7QzgnZtJ1vaSVt1dLFVwqyJ7fvxnBLYhNzf+h4L4JW3PmAj3aLpT1+UJ9P0oev9yMywYMdZod3AyYN3nEnBuK22xrcmLcSb9twERv7mxcBXukTOSWzmtkJsBuZB",
+                        "ansible_user_gecos": "ansible,,,",
+                        "ansible_system_capabilities": [
+                            ""
+                        ],
+                        "ansible_processor_threads_per_core": 1,
+                        "ansible_eth0": {
+                            "macaddress": "b8:27:eb:14:04:90",
+                            "features": {
+                                "tx_checksum_ipv4": "on",
+                                "generic_receive_offload": "on",
+                                "tx_checksum_ipv6": "off [fixed]",
+                                "netns_local": "off [fixed]",
+                                "tx_scatter_gather_fraglist": "off [fixed]",
+                                "rx_all": "off [fixed]",
+                                "highdma": "off [fixed]",
+                                "rx_fcs": "off [fixed]",
+                                "tx_lockless": "off [fixed]",
+                                "tx_tcp_ecn_segmentation": "off [fixed]",
+                                "rx_udp_tunnel_port_offload": "off [fixed]",
+                                "esp_hw_offload": "off [fixed]",
+                                "tx_gso_robust": "off [fixed]",
+                                "tx_udp_segmentation": "off [fixed]",
+                                "tx_tcp_mangleid_segmentation": "off [fixed]",
+                                "tx_ipxip4_segmentation": "off [fixed]",
+                                "tx_checksumming": "on",
+                                "macsec_hw_offload": "off [fixed]",
+                                "vlan_challenged": "off [fixed]",
+                                "loopback": "off [fixed]",
+                                "tx_ipxip6_segmentation": "off [fixed]",
+                                "rx_gro_list": "off",
+                                "fcoe_mtu": "off [fixed]",
+                                "scatter_gather": "off",
+                                "tx_tunnel_remcsum_segmentation": "off [fixed]",
+                                "tx_vlan_stag_hw_insert": "off [fixed]",
+                                "rx_vlan_stag_hw_parse": "off [fixed]",
+                                "tx_gso_partial": "off [fixed]",
+                                "tx_tcp_segmentation": "off [fixed]",
+                                "rx_vlan_stag_filter": "off [fixed]",
+                                "large_receive_offload": "off [fixed]",
+                                "tx_scatter_gather": "off [fixed]",
+                                "tx_tcp6_segmentation": "off [fixed]",
+                                "rx_checksumming": "on",
+                                "rx_gro_hw": "off [fixed]",
+                                "tx_checksum_sctp": "off [fixed]",
+                                "tx_esp_segmentation": "off [fixed]",
+                                "generic_segmentation_offload": "off [requested on]",
+                                "tls_hw_rx_offload": "off [fixed]",
+                                "tcp_segmentation_offload": "off",
+                                "l2_fwd_offload": "off [fixed]",
+                                "rx_vlan_offload": "off [fixed]",
+                                "ntuple_filters": "off [fixed]",
+                                "tx_gre_csum_segmentation": "off [fixed]",
+                                "esp_tx_csum_hw_offload": "off [fixed]",
+                                "tx_udp_tnl_segmentation": "off [fixed]",
+                                "tx_gso_list": "off [fixed]",
+                                "tx_udp_tnl_csum_segmentation": "off [fixed]",
+                                "tx_sctp_segmentation": "off [fixed]",
+                                "udp_fragmentation_offload": "off",
+                                "tls_hw_record": "off [fixed]",
+                                "tls_hw_tx_offload": "off [fixed]",
+                                "tx_checksum_fcoe_crc": "off [fixed]",
+                                "hw_tc_offload": "off [fixed]",
+                                "tx_checksum_ip_generic": "off [fixed]",
+                                "tx_fcoe_segmentation": "off [fixed]",
+                                "tx_nocache_copy": "off",
+                                "rx_vlan_filter": "off [fixed]",
+                                "tx_vlan_offload": "off [fixed]",
+                                "receive_hashing": "off [fixed]",
+                                "tx_gre_segmentation": "off [fixed]"
+                            },
+                            "type": "ether",
+                            "pciid": "1-1.1:1.0",
+                            "module": "smsc95xx",
+                            "mtu": 1500,
+                            "device": "eth0",
+                            "promisc": false,
+                            "timestamping": [
+                                "tx_software",
+                                "rx_software",
+                                "software"
+                            ],
+                            "ipv4": {
+                                "broadcast": "192.168.1.255",
+                                "netmask": "255.255.255.0",
+                                "network": "192.168.1.0",
+                                "address": "192.168.1.100"
+                            },
+                            "ipv6": [
+                                {
+                                    "scope": "link",
+                                    "prefix": "64",
+                                    "address": "fe80::ba27:ebff:fe14:490"
+                                }
+                            ],
+                            "active": true,
+                            "speed": 100,
+                            "hw_timestamp_filters": []
+                        },
+                        "ansible_system": "Linux",
+                        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAIoC9wan9eE86eaHYif5ukFe+rXUfRMYwqB1sATkCutg9i9wNqb8WHXJMLWeUfkaAMgdNlutwliwKlx2r78wGhbfgyCfS5p7o0IxLZ0DPUEveMN8uuEJ2r4Rmflbokvux/TaFEmxPUr1WBwGdZSPeME+iwaYVAJWQbs0zHPHmopFAAAAFQDN0iWP0pCJNuw7KF9sv7Kfco2OcQAAAIA7TYqi0U8gCz2Y0GMsMPhSWw8PIglY01rvhwCk5hzK4pD8QGgYXI7DcprSCky9x4AsBbITzYIb8Tnhrvh1gFnvTxCBSQj025jcbNa10H1evFpsua3Zhqqvoe70jhtnDagJ8kMOjpkuBio6N1tQUt5ao9omGZg8pt097yHA7SLZZwAAAIBnpdHe/ewR9hAz64PQistrgPqkxC/gB6inoD8XFuhFsnNXmQKSpizE19S34xG5VAaFYzP2ugoh0ZJ36lBKTwH1Sfmp6HlzlSnUY73laQ4oCbkKc4JKVE/NSVomnZW1lIbEJaIjOdfGD/aXiTViHvOyXwyF63g50hvMWuQjqDeJeQ==",
+                        "ansible_all_ipv4_addresses": [
+                            "192.168.1.100"
+                        ],
+                        "ansible_python_version": "2.7.16"
+                    }
+                },
+                "host": "192.168.1.100",
+                "start": "2022-10-17T05:18:41.541469"
+            },
+            "event_level": 3,
+            "failed": false,
+            "changed": false,
+            "uuid": "d079d062-cfb2-47c0-ba9f-ed0ef7594902",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-00000000000d",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Gathering Facts",
+            "role": "",
+            "stdout": "\u001b[0;32mok: [192.168.1.100]\u001b[0m",
+            "start_line": 9,
+            "end_line": 10,
+            "verbosity": 0
+        },
+        {
+            "id": 95,
+            "type": "job_event",
+            "url": "/api/v2/job_events/95/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/95/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.188342Z",
+            "modified": "2022-10-17T05:18:50.389651Z",
+            "job": 28,
+            "event": "playbook_on_task_start",
+            "counter": 11,
+            "event_display": "Task Started (Ping)",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "Ping",
+                "task_args": "",
+                "uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "is_conditional": false,
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "ping",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:4",
+                "name": "Ping"
+            },
+            "event_level": 2,
+            "failed": false,
+            "changed": false,
+            "uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Ping",
+            "role": "",
+            "stdout": "\r\nTASK [Ping] ********************************************************************",
+            "start_line": 10,
+            "end_line": 12,
+            "verbosity": 0
+        },
+        {
+            "id": 96,
+            "type": "job_event",
+            "url": "/api/v2/job_events/96/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/96/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:49.189345Z",
+            "modified": "2022-10-17T05:18:50.389651Z",
+            "job": 28,
+            "event": "runner_on_start",
+            "counter": 12,
+            "event_display": "Host Started",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "Ping",
+                "task_args": "",
+                "uuid": "fec6cfa9-8171-4081-b8e9-70b711fbe063",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "ping",
+                "host": "192.168.1.100",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:4"
+            },
+            "event_level": 3,
+            "failed": false,
+            "changed": false,
+            "uuid": "fec6cfa9-8171-4081-b8e9-70b711fbe063",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Ping",
+            "role": "",
+            "stdout": "",
+            "start_line": 12,
+            "end_line": 12,
+            "verbosity": 0
+        },
+        {
+            "id": 97,
+            "type": "job_event",
+            "url": "/api/v2/job_events/97/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/97/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:50.546858Z",
+            "modified": "2022-10-17T05:18:50.553075Z",
+            "job": 28,
+            "event": "runner_on_ok",
+            "counter": 13,
+            "event_display": "Host OK",
+            "event_data": {
+                "play": "localServers",
+                "event_loop": null,
+                "task_args": "",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "ping",
+                "duration": 1.357059,
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:4",
+                "play_pattern": "localServers",
+                "task": "Ping",
+                "end": "2022-10-17T05:18:50.546279",
+                "uuid": "d1745eca-75a4-4006-894a-eb72dd137dd1",
+                "remote_addr": "192.168.1.100",
+                "res": {
+                    "_ansible_no_log": false,
+                    "invocation": {
+                        "module_args": {
+                            "data": "pong"
+                        }
+                    },
+                    "changed": false,
+                    "ping": "pong"
+                },
+                "host": "192.168.1.100",
+                "start": "2022-10-17T05:18:49.189220"
+            },
+            "event_level": 3,
+            "failed": false,
+            "changed": false,
+            "uuid": "d1745eca-75a4-4006-894a-eb72dd137dd1",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000008",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "Ping",
+            "role": "",
+            "stdout": "\u001b[0;32mok: [192.168.1.100]\u001b[0m",
+            "start_line": 12,
+            "end_line": 13,
+            "verbosity": 0
+        },
+        {
+            "id": 98,
+            "type": "job_event",
+            "url": "/api/v2/job_events/98/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/98/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:50.569454Z",
+            "modified": "2022-10-17T05:18:50.575910Z",
+            "job": 28,
+            "event": "playbook_on_task_start",
+            "counter": 14,
+            "event_display": "Task Started (copy src.txt as dest.txt in the same dir)",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "copy src.txt as dest.txt in the same dir",
+                "task_args": "",
+                "name": "copy src.txt as dest.txt in the same dir",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "is_conditional": false,
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "copy",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:6",
+                "uuid": "31c08fb7-569c-9bdc-3278-000000000009"
+            },
+            "event_level": 2,
+            "failed": true,
+            "changed": false,
+            "uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "copy src.txt as dest.txt in the same dir",
+            "role": "",
+            "stdout": "\r\nTASK [copy src.txt as dest.txt in the same dir] ********************************",
+            "start_line": 13,
+            "end_line": 15,
+            "verbosity": 0
+        },
+        {
+            "id": 99,
+            "type": "job_event",
+            "url": "/api/v2/job_events/99/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/99/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:50.570592Z",
+            "modified": "2022-10-17T05:18:50.575943Z",
+            "job": 28,
+            "event": "runner_on_start",
+            "counter": 15,
+            "event_display": "Host Started",
+            "event_data": {
+                "play_pattern": "localServers",
+                "play": "localServers",
+                "task": "copy src.txt as dest.txt in the same dir",
+                "task_args": "",
+                "uuid": "32140464-0503-461d-9d59-a1eb135de16a",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "copy",
+                "host": "192.168.1.100",
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:6"
+            },
+            "event_level": 3,
+            "failed": false,
+            "changed": false,
+            "uuid": "32140464-0503-461d-9d59-a1eb135de16a",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "copy src.txt as dest.txt in the same dir",
+            "role": "",
+            "stdout": "",
+            "start_line": 15,
+            "end_line": 15,
+            "verbosity": 0
+        },
+        {
+            "id": 100,
+            "type": "job_event",
+            "url": "/api/v2/job_events/100/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/100/children/",
+                "host": "/api/v2/hosts/2/"
+            },
+            "summary_fields": {
+                "host": {
+                    "id": 2,
+                    "name": "192.168.1.100",
+                    "description": ""
+                },
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:59.431978Z",
+            "modified": "2022-10-17T05:18:59.437385Z",
+            "job": 28,
+            "event": "runner_on_failed",
+            "counter": 16,
+            "event_display": "Host Failed",
+            "event_data": {
+                "play": "localServers",
+                "event_loop": null,
+                "task_args": "",
+                "play_uuid": "31c08fb7-569c-9bdc-3278-000000000006",
+                "task_uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "task_action": "copy",
+                "duration": 8.861088,
+                "ignore_errors": null,
+                "task_path": "/tmp/bwrap_28_7ump8jok/awx_28_mywg51en/project/proj-01/playbook_ping.yml:6",
+                "play_pattern": "localServers",
+                "task": "copy src.txt as dest.txt in the same dir",
+                "end": "2022-10-17T05:18:59.431549",
+                "uuid": "f6412d34-9f0a-41f4-a0d3-68a06461eafb",
+                "remote_addr": "192.168.1.100",
+                "res": {
+                    "_ansible_no_log": false,
+                    "checksum": "dd0088a2cfa3ccf9c86f39d8283200c597c16c4e",
+                    "changed": false,
+                    "invocation": {
+                        "module_args": {
+                            "directory_mode": null,
+                            "force": true,
+                            "remote_src": null,
+                            "dest": "/home/pi/test/dest.txt",
+                            "selevel": null,
+                            "_original_basename": "src.txt",
+                            "delimiter": null,
+                            "regexp": null,
+                            "owner": null,
+                            "follow": false,
+                            "validate": null,
+                            "local_follow": null,
+                            "src": "/home/ansible/.ansible/tmp/ansible-tmp-1665983930.66-54-182986967643307/source",
+                            "group": null,
+                            "unsafe_writes": false,
+                            "checksum": "dd0088a2cfa3ccf9c86f39d8283200c597c16c4e",
+                            "seuser": null,
+                            "serole": null,
+                            "content": null,
+                            "setype": null,
+                            "mode": null,
+                            "attributes": null,
+                            "backup": false
+                        }
+                    },
+                    "diff": [],
+                    "msg": "Destination /home/pi/test not writable"
+                },
+                "host": "192.168.1.100",
+                "start": "2022-10-17T05:18:50.570461"
+            },
+            "event_level": 3,
+            "failed": true,
+            "changed": false,
+            "uuid": "f6412d34-9f0a-41f4-a0d3-68a06461eafb",
+            "parent_uuid": "31c08fb7-569c-9bdc-3278-000000000009",
+            "host": 2,
+            "host_name": "192.168.1.100",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "localServers",
+            "task": "copy src.txt as dest.txt in the same dir",
+            "role": "",
+            "stdout": "\u001b[0;31mfatal: [192.168.1.100]: FAILED! => {\"changed\": false, \"checksum\": \"dd0088a2cfa3ccf9c86f39d8283200c597c16c4e\", \"msg\": \"Destination /home/pi/test not writable\"}\u001b[0m",
+            "start_line": 15,
+            "end_line": 16,
+            "verbosity": 0
+        },
+        {
+            "id": 101,
+            "type": "job_event",
+            "url": "/api/v2/job_events/101/",
+            "related": {
+                "job": "/api/v2/jobs/28/",
+                "children": "/api/v2/job_events/101/children/"
+            },
+            "summary_fields": {
+                "job": {
+                    "id": 28,
+                    "name": "test-one",
+                    "description": "",
+                    "status": "failed",
+                    "failed": true,
+                    "elapsed": 20.089,
+                    "type": "job",
+                    "job_template_id": 9,
+                    "job_template_name": "test-one"
+                },
+                "role": {}
+            },
+            "created": "2022-10-17T05:18:59.434901Z",
+            "modified": "2022-10-17T05:18:59.542473Z",
+            "job": 28,
+            "event": "playbook_on_stats",
+            "counter": 17,
+            "event_display": "Playbook Complete",
+            "event_data": {
+                "ignored": {},
+                "skipped": {},
+                "ok": {
+                    "192.168.1.100": 2
+                },
+                "uuid": "4f336e7f-4568-4d1d-92a0-995aef05f72b",
+                "artifact_data": {},
+                "rescued": {},
+                "changed": {},
+                "dark": {},
+                "playbook_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+                "playbook": "proj-01/playbook_ping.yml",
+                "failures": {
+                    "192.168.1.100": 1
+                },
+                "processed": {
+                    "192.168.1.100": 1
+                }
+            },
+            "event_level": 1,
+            "failed": true,
+            "changed": false,
+            "uuid": "4f336e7f-4568-4d1d-92a0-995aef05f72b",
+            "parent_uuid": "d22650b1-6678-469e-b5e4-91aed726dd08",
+            "host": null,
+            "host_name": "",
+            "playbook": "proj-01/playbook_ping.yml",
+            "play": "",
+            "task": "",
+            "role": "",
+            "stdout": "\r\nPLAY RECAP *********************************************************************\r\n\u001b[0;31m192.168.1.100\u001b[0m              : \u001b[0;32mok=2   \u001b[0m changed=0    unreachable=0    \u001b[0;31mfailed=1   \u001b[0m skipped=0    rescued=0    ignored=0   \r\n",
+            "start_line": 16,
+            "end_line": 20,
+            "verbosity": 0
+        }
+    ]

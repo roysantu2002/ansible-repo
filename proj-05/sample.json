@@ -1,0 +1,34 @@
+"res": {
+                    "_ansible_no_log": false,
+                    "checksum": "dd0088a2cfa3ccf9c86f39d8283200c597c16c4e",
+                    "changed": false,
+                    "invocation": {
+                        "module_args": {
+                            "directory_mode": null,
+                            "force": true,
+                            "remote_src": null,
+                            "dest": "/home/pi/test/dest.txt",
+                            "selevel": null,
+                            "_original_basename": "src.txt",
+                            "delimiter": null,
+                            "regexp": null,
+                            "owner": null,
+                            "follow": false,
+                            "validate": null,
+                            "local_follow": null,
+                            "src": "/home/ansible/.ansible/tmp/ansible-tmp-1665983930.66-54-182986967643307/source",
+                            "group": null,
+                            "unsafe_writes": false,
+                            "checksum": "dd0088a2cfa3ccf9c86f39d8283200c597c16c4e",
+                            "seuser": null,
+                            "serole": null,
+                            "content": null,
+                            "setype": null,
+                            "mode": null,
+                            "attributes": null,
+                            "backup": false
+                        }
+                    },
+                    "diff": [],
+                    "msg": "Destination /home/pi/test not writable"
+        },
