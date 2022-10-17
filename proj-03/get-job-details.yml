@@ -1,0 +1,19 @@
+---
+- name: Testing Custom Module
+  hosts: localhost
+  vars_files:
+    - host_vars/_variables.yml
+  gather_facts: false
+
+  tasks:
+    - name: Calling job insights
+      job_insights:
+        tower_base_url : "{{tower_base_url}}"
+        tower_auth_token : "{{tower_auth_token}}"
+        tower_username : "{{tower_username}}"
+        tower_password : "{{tower_password}}"
+        tower_job_id : "{{tower_job_id}}"
+      register: custom_value
+
+    - debug:
+        msg: "{{ custom_value }}"

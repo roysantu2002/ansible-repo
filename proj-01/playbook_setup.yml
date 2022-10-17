@@ -1,0 +1,28 @@
+- name: Setup web Flsk web server
+  hosts: web_server_ubuntu_1
+  tasks:
+    - name: Ping
+      ping:
+#       register: command_result
+#       ignore_errors: True
+#
+#     - name: fail the play if the previous command did not succeed
+#       fail:
+#        msg: "the command failed"
+#       when: "'FAILED' in command_result.stderr"
+
+    # - name: Install all required packages / deendencies
+    #   apt: name={{ item }} state=latest
+    #   with_items:
+    #     - python
+    #     - python-setuptools
+    #     - python-dev
+    #     - build-essential
+    #     - python-pip
+
+    - name: Install MySQL database
+      apt: name={{ item }} state=installed
+      with_items:
+        - mysql-server
+        - mysql-client
+

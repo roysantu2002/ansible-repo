@@ -1,0 +1,16 @@
+---
+- name: Testing Custom Module
+  hosts: db_and_web_server
+  gather_facts: false
+  vars:
+    custom_message: "Test Message for Mac"
+    custome_name: "My Mac"
+  tasks:
+    - name: Calling customhello2 module
+      hello_message:
+        message: "{{ custom_message }}"
+        name: "{{ custome_name }}"
+      register: custom_value
+
+    - debug:
+        msg: "{{ custom_value }}"

@@ -1,0 +1,7 @@
+# Variable file for host db_and_web_server
+ansible_ssh_user: ansible
+ansible_ssh_pass: ansible1234
+ansible_host: 192.168.1.100
+db_name: employee_db
+db_user: db_user
+db_password: Passw0rd

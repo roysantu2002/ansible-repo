@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+    servicenow_ticket: "find"
+
+  tasks:
+    - name: Find SNOW incident
+      servicenow.itsm.incident:
+          query:
+            - state: = new
+              caller: = ansibletest
+      register: result
+
+    - name: print
+      debug:
+        msg: "The password is {{result}}"

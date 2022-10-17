@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Create new incident
+      servicenow.itsm.incident:
+        state: new
+        short_description: Demo incident

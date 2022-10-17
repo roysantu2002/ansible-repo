@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Update incident
+      servicenow.itsm.incident:
+        number: INC0010005
+        state: Auto Wait
+
