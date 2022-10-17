@@ -6,6 +6,6 @@
     - name: copy src.txt as dest.txt in the same dir
       copy:
         src: src.txt
-        dest: /home/pi/dest.txt
+        dest: /home/pi/test/dest.txt
       tags:
         - simple_copy
