@@ -1,45 +1,86 @@
-{
-    "id": [
-        24,
-        26,
-        28
-    ],
-    "url": [
-        "/api/v2/jobs/24/",
-        "/api/v2/jobs/26/",
-        "/api/v2/jobs/28/"
-    ],
-    "status": [
-        "failed",
-        "failed",
-        "failed"
-    ],
-    "job_template": [
-        9,
-        9,
-        9
-    ],
-    "inventory": [],
-    "project": [
-        8,
-        8,
-        8
-    ],
-    "events": [
-        {
+[
+    {
+        "id": 24,
+        "name": "test-one",
+        "url": "/api/v2/jobs/24/",
+        "status": "failed",
+        "job_template": 9,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
+        },
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
             "event_data": [
                 "Destination /home/pi not writable"
             ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "test-one",
+        "url": "/api/v2/jobs/26/",
+        "status": "failed",
+        "job_template": 9,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
         },
-        {
-            "event_data": [
-                "Destination /home/pi/test not writable"
-            ]
-        },
-        {
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
             "event_data": [
                 "Destination /home/pi/test not writable"
             ]
         }
-    ]
-}
+    },
+    {
+        "id": 28,
+        "name": "test-one",
+        "url": "/api/v2/jobs/28/",
+        "status": "failed",
+        "job_template": 9,
+        "inventory": 2,
+        "created_by": {
+            "id": 1,
+            "username": "admin",
+            "first_name": "",
+            "last_name": ""
+        },
+        "credentials": [
+            {
+                "id": 4,
+                "name": "SSH_ACCESS",
+                "description": "",
+                "kind": "ssh",
+                "cloud": false
+            }
+        ],
+        "events": {
+            "event_data": [
+                "Destination /home/pi/test not writable"
+            ]
+        }
+    }
+]

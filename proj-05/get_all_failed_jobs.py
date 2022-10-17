@@ -46,9 +46,8 @@ def main():
     #           tower_auth_token = dict(type='str', required=True),
     #        ),
     #     )
-    # output = dict()
-    job_data = {}
-    job_data['job_details'] = []
+    output = []
+
     # job_data['url'] = []
     # job_data['status'] = []
     # job_data['job_template'] = []
@@ -75,7 +74,7 @@ def main():
         tower_username, tower_password), verify=False)
 #
     for result in response.json()['results']:
-
+        job_data = {}
         # int(current_date.strftime("%Y%m%d%H%M%S")
         created_dt = result['created']
 
@@ -99,13 +98,21 @@ def main():
                 _events_details = get_job_events_details.get_job_events(
                     (result['id']))
 
-                job_data['id'].append(result['id'])
-                job_data['url'].append(result['url'])
-                job_data['status'].append(result['status'])
-                job_data['job_template'].append(result['job_template'])
-                job_data['project'].append(result['project'])
-                job_data['events'].append(_events_details)
-    return job_data
+                job_data['id'] = result['id']
+                job_data['name'] = result['name']
+                job_data['url'] = result['url']
+                job_data['status'] = result['status']
+                job_data['job_template'] = result['job_template']
+                job_data['inventory'] = result['inventory']
+                job_data['created_by'] = result['summary_fields']['created_by']
+                job_data['credentials'] = result['summary_fields']['credentials']
+                job_data['events'] = _events_details
+                # job_data['status'].append(result['status'])
+                # job_data['job_template'].append(result['job_template'])
+                # job_data['project'].append(result['project'])
+                # job_data['events'].append(_events_details)
+                output.append(job_data)
+    return output
 
 
 #
