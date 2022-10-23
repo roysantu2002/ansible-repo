@@ -1,0 +1,2 @@
+play_name,tasks_name,key_1,value_1,args,with_items
+Install and run a Docker container,Install Dependencies,module,apt,name={{ item }};update_cache=yes;state=present,python-dev;python-setuptools,{{name_}}
