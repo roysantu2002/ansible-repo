@@ -4,6 +4,7 @@ import os
 import sys
 
 import pyodbc
+from ea_rsa_encrypt import ea_encrypt_ad_login as ea_encrypt
 
 log.basicConfig(
     level=log.INFO,
@@ -29,7 +30,7 @@ class mssql_connection:
 
         except pyodbc.Error as e:
             log.error("[%s] Failed to connect to database: %s", self.server, str(e))
-            self.connector.close()
+
 
     """
         #TODO:
@@ -55,6 +56,13 @@ class mssql_connection:
         mssql_ccursor
     """
     def get_users(self, sql: str) -> list:
+
+        """
+            ea_encrypt
+        """
+        publicKey = ea_encrypt.loadKeys()
+
+
         cursor = self.cursor()
         cursor.execute(sql)
         users_list = []
@@ -64,8 +72,11 @@ class mssql_connection:
             return None
         else:
             for user in users_:
-                user_id_sha256 = hashlib.sha256(user.encode())
-                users_list.append(user_id_sha256.hexdigest())
+                encrypt_user = ea_encrypt.encrypt_message(publicKey, user)
+                # user_id_sha256 = hashlib.sha256(user.encode())
+                # users_list.append(user_id_sha256.hexdigest())
+                users_list.append(encrypt_user)
+            self.connector.close()
             return users_list
 
 
