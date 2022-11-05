@@ -1,0 +1,17 @@
+{localhost: [{0: !!python/object/apply:pyodbc.Row [&id001 !!python/tuple [!!python/tuple [
+            loginname, !!python/name:builtins.str '', null, 128, 128, 0, false]],
+        &id002 {loginname: 0}, sa]}, {0: !!python/object/apply:pyodbc.Row [*id001,
+        *id002, '##MS_SQLResourceSigningCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_SQLReplicationSigningCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_SQLAuthenticatorCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_PolicySigningCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_SmoExtendedSigningCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_PolicyEventProcessingLogin##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_PolicyTsqlExecutionLogin##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, '##MS_AgentSigningCertificate##']}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, BUILTIN\Administrators]}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, NT AUTHORITY\SYSTEM]}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, NT AUTHORITY\NETWORK SERVICE]}, {0: !!python/object/apply:pyodbc.Row [
+        *id001, *id002, test_01]}, {0: !!python/object/apply:pyodbc.Row [*id001, *id002,
+        test_02]}, {0: !!python/object/apply:pyodbc.Row [*id001, *id002, test_03]},
+    {0: !!python/object/apply:pyodbc.Row [*id001, *id002, test_04]}]}
