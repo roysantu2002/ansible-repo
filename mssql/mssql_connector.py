@@ -56,15 +56,16 @@ class mssql_connection:
         mssql_ccursor
     """
     def get_users(self, sql: str) -> list:
-
-        """
-            ea_encrypt
-        """
-        publicKey = ea_encrypt.loadKeys()
+#
+#         """
+#             ea_encrypt
+#         """
+#         (publicKey, privateKey) = ea_encrypt.loadKeys()
 
 
         cursor = self.cursor()
         cursor.execute(sql)
+
         users_list = []
         users_ = [item[0] for item in cursor.fetchall()]
         # users_ = cursor.fetchall()
@@ -72,10 +73,12 @@ class mssql_connection:
             return None
         else:
             for user in users_:
-                encrypt_user = ea_encrypt.encrypt_message(publicKey, user)
-                # user_id_sha256 = hashlib.sha256(user.encode())
-                # users_list.append(user_id_sha256.hexdigest())
-                users_list.append(encrypt_user)
+                # encrypt_user = ea_encrypt.encrypt_message(str(user), publicKey)
+                # print(encrypt_user)
+                user_id_sha256 = hashlib.sha256(user.encode())
+                # users_list = (user_id_sha256.hexdigest())
+                users_list.append(user_id_sha256.hexdigest())
+
             self.connector.close()
             return users_list
 

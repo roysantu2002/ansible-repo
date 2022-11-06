@@ -11,14 +11,13 @@ class ea_encrypt_ad_login:
 
 	def generateKeys():
 		(publicKey, privateKey) = rsa.newkeys(512)
-		with open(os.path.join(os.getcwd(), 'keys/publcKey.pem'), 'wb') as p:
+		with open(os.path.join(os.getcwd(), 'keys/publicKey.pem'), 'wb') as p:
 			p.write(publicKey.save_pkcs1('PEM'))
 		with open('keys/privateKey.pem', 'wb') as p:
 			p.write(privateKey.save_pkcs1('PEM'))
 
 	def loadKeys():
-		print(os.getcwd(), '/keys/publcKey.pem')
-		with open(os.path.join(os.getcwd(), '/keys/publcKey.pem'), 'wb') as p:
+		with open('keys/publicKey.pem', 'rb') as p:
 			publicKey = rsa.PublicKey.load_pkcs1(p.read())
 		with open('keys/privateKey.pem', 'rb') as p:
 			privateKey = rsa.PrivateKey.load_pkcs1(p.read())
@@ -30,6 +29,7 @@ class ea_encrypt_ad_login:
 		return   (publicKey, privateKey)
 
 	def encrypt_message(a_message , publicKey):
+		print(a_message)
 		return rsa.encrypt(a_message.encode(), publicKey)
 		# encrypted_msg =rsa.encrypt(a_message.encode(), publicKey)
 		# encoded_encrypted_msg = base64.b64encode(encrypted_msg) # base64 encoded strings are database friendly
@@ -60,3 +60,4 @@ class ea_encrypt_ad_login:
 	# print(" Original content: %s - (%d)" % (a_message, len(a_message)))
 	# print( "Encrypted message: %s - (%d)" % (encrypted_msg, len(str(encrypted_msg))))
 	# print( "Decrypted message: %s - (%d)" % (decrypted_msg, len(str(decrypted_msg))))
+# ea_encrypt_ad_login.generateKeys()
