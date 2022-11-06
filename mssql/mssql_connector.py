@@ -36,51 +36,70 @@ class mssql_connection:
         #TODO:
     """
     def mssql_connector(self) -> str:
-        if self.connector:
-            return self.connector
-        else:
-            return None
+        try:
+            log.debug("[%s] Verify the connection ...", self.server)
+            log.info("[%s] connecting ...", self.server)
+            if self.connector:
+                return self.connector
+            else:
+                return None
+        except pyodbc.Error as e:
+            log.error("[%s] Failed to connect to database: %s", self.server, str(e))
 
     """
         #TODO:
         mssql_ccursor
     """
     def cursor(self):
-        if self.connector:
-            return self.connector.cursor()
-        else:
-            return None
+         try:
+            log.debug("[%s] Verify the connection ...", self.server)
+            log.info("[%s] connecting ...", self.server)
+            if self.connector:
+                return self.connector.cursor()
+            else:
+                return None
+         except pyodbc.Error as e:
+            log.error("[%s] Failed to connect to database: %s", self.server, str(e))
 
     """
         #TODO:
         mssql_ccursor
     """
     def get_users(self, sql: str) -> list:
-#
-#         """
-#             ea_encrypt
-#         """
-#         (publicKey, privateKey) = ea_encrypt.loadKeys()
+
+        try:
+            log.debug("[%s] Verify the connection ...", self.server)
+            log.info("[%s] connecting ...", self.server)
+            #
+            #         """
+            #             ea_encrypt
+            #         """
+            #         (publicKey, privateKey) = ea_encrypt.loadKeys()
 
 
-        cursor = self.cursor()
-        cursor.execute(sql)
+            cursor = self.cursor()
+            if cursor is not None:
+                cursor.execute(sql)
 
-        users_list = []
-        users_ = [item[0] for item in cursor.fetchall()]
-        # users_ = cursor.fetchall()
-        if len(users_)==0:
-            return None
-        else:
-            for user in users_:
-                # encrypt_user = ea_encrypt.encrypt_message(str(user), publicKey)
-                # print(encrypt_user)
-                user_id_sha256 = hashlib.sha256(user.encode())
-                # users_list = (user_id_sha256.hexdigest())
-                users_list.append(user_id_sha256.hexdigest())
+                users_list = []
+                users_ = [item[0] for item in cursor.fetchall()]
+                # users_ = cursor.fetchall()
+                if len(users_)==0:
+                    return None
+                else:
+                    for user in users_:
+                        # encrypt_user = ea_encrypt.encrypt_message(str(user), publicKey)
+                        # print(encrypt_user)
+                        user_id_sha256 = hashlib.sha256(user.encode())
+                        # users_list = (user_id_sha256.hexdigest())
+                        users_list.append(user_id_sha256.hexdigest())
 
-            self.connector.close()
-            return users_list
+                    self.connector.close()
+                    return users_list
+            else:
+                return []
+        except pyodbc.Error as e:
+            log.error("[%s] Failed to connect to database: %s", self.server, str(e))
 
 
 
