@@ -2,6 +2,7 @@
 import json
 
 import yaml
+from common_func import common_func as util
 from mssql_connector import mssql_connection
 
 """
@@ -20,7 +21,8 @@ password = 'Ansible1234'
 
 server_list = ['www.server1.com', 'www.server2.com', 'www.server3.com', 'www.server4.com']
 user_dict = dict()
-
+_file_name = util().create_file()
+print(_file_name)
 for serverName in server_list:
     # ENCRYPT defaults to yes starting in ODBC Driver 18. It's good to always specify ENCRYPT=yes on the client side to avoid MITM attacks.
     cnxn = mssql_connection(server, database, username, password)
@@ -42,7 +44,7 @@ for serverName in server_list:
     user_dict[serverName] = user_list
 
 
-with open("_sql_user_data.json", "w") as write_file:
+with open(_file_name, "w") as write_file:
     json.dump(user_dict, write_file, indent = 4)
 
     # Serializing json

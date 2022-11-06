@@ -19,15 +19,10 @@ headers = {
 file_ = ""
 file_base64 = ""
 
+"""
+    #TODO: read the file content and push to git
 
-# test_file = open("_sql_user_data.json", "rb")
-# with open('_sql_user_data.json', "rb") as fobj:
-#         file_obj = fobj.read()
-#         file_basename = os.path.basename('_sql_user_data.json')
-#         print(file_basename)
-#         file_to_upload = {"file": (str(file_basename), file_obj)}
-#         finfo = {"fullPath": '_sql_user_data.json'}
-
+"""
 file_=""
 with open("_sql_user_data.json", "r") as file:
     file_ = file.read()
