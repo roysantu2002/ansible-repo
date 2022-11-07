@@ -1,6 +1,8 @@
 import base64
+import glob
 import json
 import os
+from datetime import datetime
 
 import requests
 from dotenv import load_dotenv
@@ -18,16 +20,30 @@ headers = {
 
 file_ = ""
 file_base64 = ""
-
+upload_file = ""
 """
     #TODO: read the file content and push to git
+    search latest file in the current directory
+    convert the file content to base64
+    and connect to git with token
+    push the file in the git repo
 
 """
-file_=""
-with open("_sql_user_data.json", "r") as file:
+datestring = str(int(datetime.now().strftime("%Y%m%d")))
+current_path = os.path.join(os.path.dirname(__file__), datestring + "/*")
+
+list_of_files = glob.glob(current_path) # * means all if need specific format then *.csv
+latest_file = max(list_of_files, key=os.path.getctime)
+upload_file = os.path.basename(latest_file).split('/')[-1]
+print(upload_file)
+
+# print(max_file)
+
+file_= ""
+with open(latest_file, "r") as file:
     file_ = file.read()
 
-print(file_)
+
 message_bytes = file_.encode('ascii')
 base64_bytes = base64.b64encode(message_bytes)
 base64_message = base64_bytes.decode('ascii')
@@ -38,23 +54,20 @@ payload = json.dumps({
   "content": f'{base64_message}'
 })
 
-print(payload)
-
 # test_file = open("_sql_user_data.json", "rb")
 
 # This is the base URL for all Nautobot API calls
 # base_url = 'https://api.github.com/repos/roysantu2002/ansible-repo/contents/_sql_user_data.json'
-base_url = 'https://api.github.com/repos/roysantu2002/ansible-repo/contents/_sql_user_data_02.json'
+base_url = 'https://api.github.com/repos/roysantu2002/ansible-repo/contents/'+str(upload_file)
 
 #
 #
-# print(body)
+print(base_url)
 try:
     response = requests.put(base_url, data=payload, headers=headers)
     print(response)
     if response.ok:
         print("Upload completed successfully!")
-        print(response.text)
     else:
         print("Something went wrong!")
 except Exception as e:

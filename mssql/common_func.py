@@ -20,17 +20,12 @@ class common_func:
 
     def create_file(self) -> str:
         dir_ = self.create_folder()
-        print(dir_)
         # get current date and time
         current_datetime = str(int(datetime.now().strftime("%Y%m%d%H%M%S")))
-        # print("Current date & time : ", current_datetime)
-
         # convert datetime obj to string
         str_current_datetime = str(current_datetime)
-
         # create a file object along with extension
         file_name = str_current_datetime+".json"
-        print(os.path.join(dir_, file_name))
-        file = open(os.path.join(dir_, file_name), 'w')
+        # file = open(os.path.join(dir_, file_name), 'w')
         return file_name
 
