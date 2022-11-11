@@ -1,0 +1,18 @@
+---
+- name: Testing Custom Module
+  hosts: localhost
+  gather_facts: false
+  vars:
+    tower_base_url: "https://10.42.0.42"
+    tower_auth_token: "EcgpnukNkWveueCuKUuQLTIJbEEZ62"
+    tower_job_id: "20"
+  tasks:
+    - name: Calling customhello2 module
+      job_insights:
+        tower_base_url: "{{ tower_base_url }}"
+        tower_auth_token: "{{tower_auth_token}}"
+        tower_job_id: "{{tower_job_id}}"
+      register: result
+
+    - debug:
+        msg: "{{ result }}"
