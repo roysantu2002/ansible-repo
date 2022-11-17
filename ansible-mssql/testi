@@ -1,0 +1,8 @@
+# Variable file for host db_and_web_server
+
+# Example of setting a group of hosts to use Python3
+[py3_hosts]
+localhost
+
+[py3_hosts:vars]
+ansible_python_interpreter=/Users/santuroy/opt/anaconda3/envs/ansible-mssql/lib/python3.10

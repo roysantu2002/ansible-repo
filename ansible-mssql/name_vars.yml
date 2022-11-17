@@ -1,0 +1,5 @@
+# Variable file for host db_and_web_server
+mssql_login_user: sa
+mssql_login_password: ansible1234
+mssql_host: localhost
+mssql_port: 1433

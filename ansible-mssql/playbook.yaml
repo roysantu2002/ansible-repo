@@ -1,0 +1,140 @@
+---
+- name: DB conn
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    # - name: DB connection
+    #   community.general.odbc:
+    #     dsn: "DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=master;UID=SA;PWD=Ansible1234;TrustServerCertificate=yes;"
+    #
+    #   register: dsn
+
+    # - include_vars: name_vars.yml
+    - name: DB connection
+      community.general.odbc:
+        dsn: "DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=master;UID=SA;PWD=Ansible1234;TrustServerCertificate=yes;"
+        query: "Select loginname from master.sys.syslogins"
+        commit: false
+      changed_when: false
+      register: users_result_list
+      # when: result_batches_dict['results'] is search('sa')
+
+    - name: Get User List
+      set_fact:
+        Users: "{{users_result_list.results}}"
+        user: "test_03"
+
+
+    # - name: Print List
+    #   set_fact:
+    #     test: "{{ item }}"
+    #   when: user in Users
+    #   loop: "{{Users}}"
+
+    - name: Print a debug of values
+      vars:
+        user: "{{user}}"
+      community.general.odbc:
+       dsn: "DRIVER={ODBC Driver 18 for SQL Server};Server=localhost;Database=master;UID=SA;PWD=Ansible1234;TrustServerCertificate=yes;"
+       query: "DROP LOGIN {{user}};"
+       commit: true
+      changed_when: false
+      # debug:
+      #   msg: "{{user}} is found"
+      when: Users is search(user, ignorecase=True)
+      failed_when:
+        - Users is search("0 ROWS AFFECTED", ignorecase=True)
+      register: user_deleted
+
+    - name: output
+      debug:
+        msg: "{{user_deleted}}"
+
+
+
+
+      # debug:
+      #   msg: "{{user}}" #}
+      # debug: var=Users
+      # debug:
+      #   msg: "{{Users}}"
+        # var: Users=users_result_list
+        # user_logins: "{{Users}}"
+        # msg: "{{user_logins}}"
+      # var: users_result_list.results[0]
+      # register: {{user_logins = users_result_list.results[0]}}
+      # debug:
+      #   msg: "{{user_logins}}"
+
+    # - name: Validate User
+    #   vars:
+    #     user_name: "sa"
+    #   debug:
+    #     var: users_result_list.results
+    #   when: "users_result_list.results.find('sa') != -1"
+      # when: user_name in users_result_list.results
+
+#
+#       login_user: "{{ mssql_login_user }}"
+#       login_password: "{{ mssql_login_password }}"
+#       login_host: "{{ mssql_host }}"
+#       login_port: "{{ mssql_port }}"
+#       db: master
+#       script: "SELECT 1"
+#
+# - name: Query with parameter
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     script: |
+#       SELECT name, state_desc FROM sys.databases WHERE name = %(dbname)s
+#     params:
+#       dbname: msdb
+#   register: result_params
+# - assert:
+#     that:
+#       - result_params.query_results[0][0][0][0] == 'msdb'
+#       - result_params.query_results[0][0][0][1] == 'ONLINE'
+#
+# - name: two batches with default output
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     script: |
+#       SELECT 'Batch 0 - Select 0'
+#       SELECT 'Batch 0 - Select 1'
+#       GO
+#       SELECT 'Batch 1 - Select 0'
+#   register: result_batches
+# - assert:
+#     that:
+#       - result_batches.query_results | length == 2  # two batch results
+#       - result_batches.query_results[0] | length == 2  # two selects in first batch
+#       - result_batches.query_results[0][0] | length == 1  # one row in first select
+#       - result_batches.query_results[0][0][0] | length == 1  # one column in first row
+#       - result_batches.query_results[0][0][0][0] == 'Batch 0 - Select 0'  # each row contains a list of values.
+#
+# - name: two batches with dict output
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     output: dict
+#     script: |
+#       SELECT 'Batch 0 - Select 0' as b0s0
+#       SELECT 'Batch 0 - Select 1' as b0s1
+#       GO
+#       SELECT 'Batch 1 - Select 0' as b1s0
+#   register: result_batches_dict
+# - assert:
+#     that:
+#       - result_batches_dict.query_results_dict | length == 2  # two batch results
+#       - result_batches_dict.query_results_dict[0] | length == 2  # two selects in first batch
+#       - result_batches_dict.query_results_dict[0][0] | length == 1  # one row in first select
+#       - result_batches_dict.query_results_dict[0][0][0]['b0s0'] == 'Batch 0 - Select 0'  # column 'b0s0' of first row

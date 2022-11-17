@@ -1,0 +1,70 @@
+
+- name: DB conn
+  hosts: localhost
+  tasks:
+  - include_vars: name_vars.yml
+
+  - name: DB connection
+    community.general.mssql_script:
+      login_user: "{{ mssql_login_user }}"
+      login_password: "{{ mssql_login_password }}"
+      login_host: "{{ mssql_host }}"
+      login_port: "{{ mssql_port }}"
+      db: master
+      script: "SELECT 1"
+#
+# - name: Query with parameter
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     script: |
+#       SELECT name, state_desc FROM sys.databases WHERE name = %(dbname)s
+#     params:
+#       dbname: msdb
+#   register: result_params
+# - assert:
+#     that:
+#       - result_params.query_results[0][0][0][0] == 'msdb'
+#       - result_params.query_results[0][0][0][1] == 'ONLINE'
+#
+# - name: two batches with default output
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     script: |
+#       SELECT 'Batch 0 - Select 0'
+#       SELECT 'Batch 0 - Select 1'
+#       GO
+#       SELECT 'Batch 1 - Select 0'
+#   register: result_batches
+# - assert:
+#     that:
+#       - result_batches.query_results | length == 2  # two batch results
+#       - result_batches.query_results[0] | length == 2  # two selects in first batch
+#       - result_batches.query_results[0][0] | length == 1  # one row in first select
+#       - result_batches.query_results[0][0][0] | length == 1  # one column in first row
+#       - result_batches.query_results[0][0][0][0] == 'Batch 0 - Select 0'  # each row contains a list of values.
+#
+# - name: two batches with dict output
+#   community.general.mssql_script:
+#     login_user: "{{ mssql_login_user }}"
+#     login_password: "{{ mssql_login_password }}"
+#     login_host: "{{ mssql_host }}"
+#     login_port: "{{ mssql_port }}"
+#     output: dict
+#     script: |
+#       SELECT 'Batch 0 - Select 0' as b0s0
+#       SELECT 'Batch 0 - Select 1' as b0s1
+#       GO
+#       SELECT 'Batch 1 - Select 0' as b1s0
+#   register: result_batches_dict
+# - assert:
+#     that:
+#       - result_batches_dict.query_results_dict | length == 2  # two batch results
+#       - result_batches_dict.query_results_dict[0] | length == 2  # two selects in first batch
+#       - result_batches_dict.query_results_dict[0][0] | length == 1  # one row in first select
+#       - result_batches_dict.query_results_dict[0][0][0]['b0s0'] == 'Batch 0 - Select 0'  # column 'b0s0' of first row
